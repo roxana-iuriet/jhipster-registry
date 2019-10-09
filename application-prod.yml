@@ -1,0 +1,5 @@
+ spring:
+   datasource:
+     url: mongodb://teamxmongodb:8SarUvcnsKcN9Cjh1puhJkM3amHfji88TFHe0aRBdb0hsPj2wPisKEsocBFktSyqDgubokEqWAHxnpnAbpvmFw==@teamxmongodb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+     username: teamxmongodb
+     password: 8SarUvcnsKcN9Cjh1puhJkM3amHfji88TFHe0aRBdb0hsPj2wPisKEsocBFktSyqDgubokEqWAHxnpnAbpvmFw==
