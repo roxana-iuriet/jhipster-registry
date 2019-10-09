@@ -332,6 +332,33 @@
     </dependencies>
 
     <build>
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-webapp-maven-plugin</artifactId>
+            <!-- check Maven Central for the latest version -->
+            <version>1.6.0</version>
+            <configuration>
+                <schemaVersion>v2</schemaVersion>
+                <resourceGroup>xteam-rg</resourceGroup>
+                <appName>xteamEureka</appName>
+                <runtime>
+                    <os>Linux</os>
+                    <javaVersion>java8</javaVersion>
+                </runtime>
+                <pricingTier>P1v2</pricingTier>
+                <region>North Europe</region>
+                <deployment>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/target</directory>
+                            <includes>
+                                <include>${project.build.finalName}.jar</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </deployment>
+            </configuration>
+        </plugin>
         <defaultGoal>spring-boot:run</defaultGoal>
         <pluginManagement>
             <plugins>
